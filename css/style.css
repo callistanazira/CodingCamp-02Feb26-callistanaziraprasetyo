@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: radial-gradient(circle at top, #1e293b, #020617);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e5e7eb;
+}
+
+.wrapper{
+    width: 520px;
+}
+
+.card{
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card-header h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.input-area{
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.input-area input{
+    background: #020617;
+    border: 1px solid #334155;
+    color: #e5e7eb;
+    padding: 8px;
+    border-radius: 6px;
+    flex: 1;
+}
