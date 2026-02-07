@@ -6,52 +6,61 @@
     <title>Todo List App</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+<!-- CUSTOM ALERT -->
+<div id="alertBox" class="alert hidden">
+    <div class="alert-content">
+        <p id="alertMessage"></p>
+        <button onclick="closeAlert()">OK</button>
+    </div>
+</div>
+
 <body>
+<div class="layout-center">
+    <main class="wrapper">
+        <section class="card">
+            <header class="card-header">
+                <h1>Todo List App</h1>
+            </header>
 
-<main class="wrapper">
-    <section class="card">
-        <header class="card-header">
-            <h1>Todo List</h1>
-        </header>
-    
-    <!-- INPUT -->
-    <section class="input-area">
-        <input type="text" id="taskInput" placeholder="Add a todo....">
-        <input type="date" id="dateInput">
-        <button id="addButton">+</button>
-    </section>
+            <!-- Add Todo -->
+            <section class="input-area">
+                <input type="text" id="taskInput" placeholder="Add a todo....">
+                <input type="date" id="dateInput">
+                <button id="addButton">+</button>
+            </section>
 
-    <!-- ACTION -->
-    <section class="action-area">
-        <button id="filterBtn">FILTER</button>
-        <button id="deleteAllBtn">DELETE ALL</button>
-    </section>
+            <!-- Action -->
+            <section class="action-area">
+                <button id="filterBtn">FILTER</button>
+                <button id="deleteAllBtn">DELETE ALL</button>
+            </section>
 
-    <!-- TABLE -->
-    <section class="table-area">
-        <table>
-            <thead>
-                <tr>
-                    <th>TASK</th>
-                    <th>DUE DATE</th>
-                    <th>STATUS</th>
-                    <th>ACTIONS</th>
-                </tr>
-            </thead>
-            <tbody id="todoBody">
-                <tr class="empty">
-                    <td colspan="4">No task found</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    </section>
+            <!-- Table -->
+            <section class="table-area">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>TASK</th>
+                            <th>DUE DATE</th>
+                            <th>STATUS</th>
+                            <th>ACTIONS</th>
+                        </tr>
+                    </thead>
+                    <tbody id="todoBody">
+                        <tr class="empty">
+                            <td colspan="4">No task found</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+    </main>
+
     <footer class="footer">
-    <p>
-        © 2026 Todo List App
-    </p>
+        <p>© 2026 Todo List App</p>
     </footer>
-</main>
-    
+</div>
+
+<script src="js/script.js"></script>
 </body>
 </html>
